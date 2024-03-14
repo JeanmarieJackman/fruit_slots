@@ -19,6 +19,9 @@ const symbolProbabilities = {
 
 // Function to spin the reels
 function spin() {
+    const resultElement = document.getElementById('result');
+    resultElement.textContent = ''; // Clear the result message
+
     const spinDuration = 2000; // Duration of the spin animation in milliseconds
     const animationInterval = 100; // Interval between symbol updates during animation in milliseconds
     const numFrames = spinDuration / animationInterval; // Number of frames in the animation
@@ -32,7 +35,6 @@ function spin() {
         'Diamond': 'blue'
     };
 
-    const resultElement = document.getElementById('result');
     const reelElements = [document.getElementById('reel1'), document.getElementById('reel2'), document.getElementById('reel3')];
 
     const spinAnimation = setInterval(() => {
