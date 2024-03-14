@@ -10,12 +10,25 @@
 
 <div class="slot-machine">
   <h1>Slot Machine</h1>
+  <p>Try your luck and line up three of the same symbols to win coins.</p>
+  <p>Here are the payout rates:</p>
+  <ul class="payouts">
+    <li>Cherry: 10 coins</li>
+    <li>Bell: 20 coins</li>
+    <li>Bar: 30 coins</li>
+    <li>Seven: 50 coins</li>
+    <li>Diamond: 100 coins</li>
+  </ul>
   <p>Click the button to spin the reels!</p>
+
+  <div class="reel-box" id="reel1"></div>
+  <div class="reel-box" id="reel2"></div>
+  <div class="reel-box" id="reel3"></div>
   <p id="result"></p>
   <button onclick="spin()">Spin</button>
 </div>
 
-<script src="js/script.js"></script>
+<script src="js/slot_machine.js"></script>
 
 </body>
 </html>
