@@ -9,6 +9,17 @@ body {
     margin-top: 50px;
 }
 
+.reel-box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    margin: 10px;
+    display: inline-block;
+    text-align: center; /* Center horizontally */
+    line-height: 100px; /* Vertically center content */
+    font-weight: bold; /* Make the text very bold */
+}
+
 button {
     font-size: 18px;
     padding: 10px 20px;
@@ -22,4 +33,9 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+.payouts li {
+    list-style-type: none; /* Remove bullets */
+    margin-bottom: 5px; /* Adjust spacing between items */
 }
